@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+}
+#video-fundo {
+    position: fixed;top: 50%;left: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    border: none;
+    z-index: -2;
+    pointer-events: none;
+}
+.conteudo {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.logo{
+    width: 700px;
+    margin-top: 180px;
+}
+.botãoLegal {
+    width: 600px;
+    height: 45px;
+    margin-top: 15px;
+    color: white;
+    background-color:rgb(121, 121, 121);
+    border: oklab(lightness 50% a 0 b 0);
+    cursor: pointer;
+    font-size: 18px;   
+}
+.botãoLegal:hover {
+    background-color:rgb(143, 143, 143);
+    color: rgb(255, 238, 2);
+    border:solid 2px rgb(90, 90, 90);
+}
